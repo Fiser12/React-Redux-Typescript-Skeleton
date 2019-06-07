@@ -60,7 +60,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "connected-react-router": "^6.4.0",
     "lin3s-css-grid": "^0.3.0",
     "react": "^16.8.6",
