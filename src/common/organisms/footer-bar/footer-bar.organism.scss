@@ -1,0 +1,18 @@
+$background-color: rgb(245, 245, 245);
+$vertical-padding: 20px;
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-color;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: $vertical-padding;
+    padding-bottom: $vertical-padding;
+}

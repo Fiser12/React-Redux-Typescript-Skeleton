@@ -1,0 +1,23 @@
+$minimum-padding: 5px;
+$minimum-margin: 5px;
+$height-bar: 50px;
+$background-color: rgb(245, 245, 245);
+$color-border-bottom-bar: rgb(221, 221, 221);
+$image-margin: $minimum-margin $minimum-margin 0px 0px;
+$width: 100%;
+$z-index: 99;
+
+.header-bar {
+  height: $height-bar;
+  padding-top: $minimum-padding;
+  width:$width;
+  z-index: $z-index;
+  display: block;
+  background-color: $background-color;
+  background-size: 100% $minimum-padding;
+  box-shadow: none;
+  list-style: none;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid $color-border-bottom-bar;
+}

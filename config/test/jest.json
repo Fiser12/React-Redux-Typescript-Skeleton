@@ -1,0 +1,29 @@
+{
+  "rootDir": "../../",
+  "testRegex": "\\.test\\.(js|ts|tsx)?$",
+  "moduleFileExtensions": [
+    "js",
+    "jsx",
+    "json",
+    "ts",
+    "tsx"
+  ],
+  "setupFiles": [
+    "<rootDir>/config/test/polyfills.js",
+    "<rootDir>/config/test/setupTest.js"
+  ],
+  "testURL": "http://localhost/",
+  "transform": {
+    ".jsx?": "babel-jest",
+    ".tsx?": "ts-jest"
+  },
+  "restoreMocks": true,
+  "snapshotSerializers": [
+    "enzyme-to-json/serializer"
+  ],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif)$": "identity-obj-proxy",
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+    "^core$": "<rootDir>/src/core"
+  }
+}
