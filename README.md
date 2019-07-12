@@ -1,4 +1,4 @@
-# Frontend de la Consola de Administración
+# Frontend mediante React Redux y Typescript
 ## Descripción leve del proyecto
 Esta es la base de proyecto para desarrollar webs mediante React, Redux y Typescript. Están configurados también todos los elementos necesarios para hacer la compilación. También está configurado docker con nginx para funcionar como un proxy inverso para conectar con la API del Backend.
 
