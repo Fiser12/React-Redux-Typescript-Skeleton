@@ -1,0 +1,26 @@
+version: '3.4'
+
+networks:
+  crv_dev_network:
+    driver: bridge
+
+services:
+  nginx:
+    container_name: nginx-server
+    env_file:
+      - ./.env
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+      target: nginx
+      args:
+        - http_proxy=$HTTP_PROXY
+        - https_proxy=$HTTPS_PROXY
+        - no_proxy=$NO_PROXY
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      crv_dev_network:
+        aliases:
+          - nginx

@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Trans} from "react-i18next";
 import {connect} from "react-redux";
 import {Dispatch} from "redux";
 import {IState} from "../../../state";
@@ -21,7 +22,7 @@ function mapDispatchToProps(dispatch: Dispatch) {
 const HomeTemplateInner = (props: IProps) => {
     return (
         <div>
-            <h1>Home</h1>
+            <h1><Trans>Title</Trans></h1>
         </div>
     );
 };

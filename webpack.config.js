@@ -2,6 +2,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var webpack = require("webpack");
 var path = require("path");
+const Dotenv = require('dotenv-webpack');
 
 var basePath = __dirname;
 
@@ -21,6 +22,7 @@ module.exports = {
   entry: ["@babel/polyfill", "./index.tsx"],
   output: {
     path: path.join(basePath, "dist"),
+    publicPath: "/",
     filename: "bundle.js"
   },
   devtool: "source-map",
@@ -28,7 +30,7 @@ module.exports = {
     contentBase: "./dist", // Content base
     inline: true, // Enable watch and live reload
     host: "localhost",
-    port: 8080,
+    port: 80,
     stats: "errors-only",
     disableHostCheck: true,
     historyApiFallback: true,
@@ -74,6 +76,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new Dotenv(),
     //Generate index.html in /dist => https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: "index.html", //Name of file in ./dist/

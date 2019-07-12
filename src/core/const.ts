@@ -1,1 +1,1 @@
-export const baseApiUrl = "http://localhost:8080";
+export const defaultLocale = process.env.DEFAULT_LOCALE;
