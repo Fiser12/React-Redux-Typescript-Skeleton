@@ -22,7 +22,7 @@ export const generateLanguage = (locale, location) => {
 };
 
 i18n.use(LanguageDetector).init({
-    debug: false,
+    debug: true,
     defaultNS: "header",
     fallbackLng: defaultLocale,
     // we init with resources
@@ -32,7 +32,7 @@ i18n.use(LanguageDetector).init({
     },
     keySeparator: false, // we use content as keys
     // have a common namespace used around the full app
-    ns: ["initiatives", "login", "header"],
+    ns: ["header"],
     react: {
         wait: true,
     },

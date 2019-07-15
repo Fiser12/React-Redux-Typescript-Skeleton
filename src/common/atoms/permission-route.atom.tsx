@@ -13,6 +13,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
 };
 
 const PermissionRouteInner = ({component: Component, ...rest}) => {
+    // Send all user and permissions in this component and make here the redirections to other pages
     return (<Route {...rest} render={(props) => (<Component {...props} />)}/>);
 };
 

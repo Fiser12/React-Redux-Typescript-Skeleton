@@ -6,13 +6,13 @@ html {
     position: relative;
 }
 
-footer {
+.footer-bar {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: $background-color;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: $vertical-padding;
     padding-bottom: $vertical-padding;
 }
