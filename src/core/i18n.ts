@@ -22,7 +22,7 @@ export const generateLanguage = (locale, location) => {
 };
 
 i18n.use(LanguageDetector).init({
-    debug: true,
+    debug: false,
     defaultNS: "header",
     fallbackLng: defaultLocale,
     // we init with resources
