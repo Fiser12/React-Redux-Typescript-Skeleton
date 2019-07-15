@@ -16,7 +16,7 @@ export const HeaderBar = (props: IProps) => {
                 <h1><Trans>Title</Trans></h1>
             </div>
             <div className={"header-bar__language-section"}>
-                <p>Language</p>
+                <h3><Trans>Language</Trans></h3>
                 <a onClick={() => changeLanguage("es")}>
                     <Trans>Spanish</Trans>
                 </a>

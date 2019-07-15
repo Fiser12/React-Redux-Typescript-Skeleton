@@ -27,8 +27,9 @@ $z-index: 99;
   width: 20%;
 }
 
-.header-bar__language-section > button {
+.header-bar__language-section > a {
   padding-right: $minimum-padding;
+  cursor: pointer;
 }
 
 .header-bar__title {
