@@ -1,7 +1,4 @@
 # [<](../../Readme.md) Recursos
-Muchos de estos libros y cursos están dentro de la carpeta de recursos compartidos
-
-[\\192.168.100.24\Analisis\PROYECTO\Devops\DOCUMENTACION\Formación\Libros de Frontend]()
 ## Documentación oficial
 - [material-ui](https://material-ui.com/)
 - [Redux Oficial Inglés](https://redux.js.org)
